@@ -49,7 +49,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(labelpuntuacio)
         
         
-        _ = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("appearRandom"), userInfo: nil, repeats: false)
+        _ = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("appearRandom"), userInfo: nil, repeats: true)
         
 
     }
@@ -72,13 +72,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func appearRandom () {
-        let ancho = arc4random() % UInt32(self.frame.size.width/2)//le restamos el ancho entero.
-        
+        var ancho = arc4random() % UInt32(self.frame.size.width)//le restamos el ancho entero.
+        comprobrar_posicion(&ancho)
         flappy.physicsBody = SKPhysicsBody(circleOfRadius: flappy.size.height/2)
         flappy.physicsBody!.dynamic = true
         flappy.name = "flappy"
         flappy.physicsBody!.affectedByGravity = false
-        //flappy.physicsBody!.velocity = CGVectorMake(0 , -175)
+        flappy.physicsBody!.velocity = CGVectorMake(0 , -175)
         
         flappy.physicsBody!.categoryBitMask = tipodecolisions.flappy.rawValue
         flappy.physicsBody!.collisionBitMask = tipodecolisions.flappy.rawValue
@@ -113,8 +113,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
-    func comprobrar_posicion(){
-        
+    func comprobrar_posicion(inout posicion: UInt32){
+        if (posicion >= 0 && posicion <= UInt32(flappy.size.width))  || (posicion >= (UInt32(self.frame.size.width) - UInt32(flappy.size.width)) && posicion <= UInt32(self.frame.size.width)) {
+            posicion = posicion + UInt32(flappy.size.width/2)
+            
+        }
     }
 
     override func update(currentTime: CFTimeInterval) {

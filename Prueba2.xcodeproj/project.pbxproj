@@ -14,6 +14,8 @@
 		508272D91C64A61900F98B1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508272D71C64A61900F98B1E /* Main.storyboard */; };
 		508272DB1C64A61900F98B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508272DA1C64A61900F98B1E /* Assets.xcassets */; };
 		508272DE1C64A61900F98B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508272DC1C64A61900F98B1E /* LaunchScreen.storyboard */; };
+		508272E61C64A7AF00F98B1E /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 508272E51C64A7AF00F98B1E /* black.png */; };
+		508272E81C64A7B900F98B1E /* flappy1.png in Resources */ = {isa = PBXBuildFile; fileRef = 508272E71C64A7B900F98B1E /* flappy1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		508272DA1C64A61900F98B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		508272DD1C64A61900F98B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		508272DF1C64A61900F98B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		508272E51C64A7AF00F98B1E /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black.png; path = ../../../../../../../../Desktop/black.png; sourceTree = "<group>"; };
+		508272E71C64A7B900F98B1E /* flappy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flappy1.png; path = ../../../../../../../../Desktop/flappy1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				508272DA1C64A61900F98B1E /* Assets.xcassets */,
 				508272DC1C64A61900F98B1E /* LaunchScreen.storyboard */,
 				508272DF1C64A61900F98B1E /* Info.plist */,
+				508272E71C64A7B900F98B1E /* flappy1.png */,
+				508272E51C64A7AF00F98B1E /* black.png */,
 			);
 			path = Prueba2;
 			sourceTree = "<group>";
@@ -132,6 +138,8 @@
 				508272DE1C64A61900F98B1E /* LaunchScreen.storyboard in Resources */,
 				508272DB1C64A61900F98B1E /* Assets.xcassets in Resources */,
 				508272D91C64A61900F98B1E /* Main.storyboard in Resources */,
+				508272E61C64A7AF00F98B1E /* black.png in Resources */,
+				508272E81C64A7B900F98B1E /* flappy1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
